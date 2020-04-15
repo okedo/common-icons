@@ -1,0 +1,7 @@
+{
+  "dest": "src/assets/sprites",
+  "mode": {
+    "inline": true,
+    "symbol": true
+  }
+}
