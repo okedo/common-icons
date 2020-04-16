@@ -1,7 +1,9 @@
 import { Component, Input } from '@angular/core';
 
+import { CommonIcon } from './common-icons-names';
+
 @Component({
-  selector: 'lib-common-icons',
+  selector: 'common-icon',
   template: `
   <svg
     [style.fill]="fill"
@@ -14,9 +16,9 @@ import { Component, Input } from '@angular/core';
   `,
   styles: []
 })
-export class CommonIconsComponent {
+export class CommonIconComponent {
 
-  @Input() public iconName: string;
+  @Input() public iconName: CommonIcon;
   @Input() public width: string;
   @Input() public height: string;
   @Input() public fill: string;
