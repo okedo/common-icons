@@ -19,6 +19,14 @@ To add new icon you need:
 To use in your app you should:
 
 - Install package via npm: `npm i --save @spike_doc/common-icons`;
+- Add folloving code to `assets` section of `angular.json`:
+```
+{
+  "glob": "**/*",
+  "input": "./node_modules/@spike_doc/common-icons/src/assets",
+  "output": "./assets"
+}
+```
 - Add Material icon fonts to index.html of app:
 
 ```
