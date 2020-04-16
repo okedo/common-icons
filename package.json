@@ -5,6 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build_lib": "npm run lib && ng build --prod",
+    "publish_lib": "npm run lib && npm publish --access public",
+    "lib": "cd ./projects/common-icons",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
