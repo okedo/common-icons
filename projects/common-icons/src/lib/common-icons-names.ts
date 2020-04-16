@@ -13,6 +13,7 @@ export const ICON_NAMES = [
   'playlist_add_check'
 ];
 
+// @dynamic
 export class IconNamesHelper {
   public static inList(iconName: string): boolean {
     return !!ICON_NAMES.find((name: string) => (name == iconName));
