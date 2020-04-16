@@ -1,3 +1,3 @@
 export interface Style {
-  [klass: string]: any;
+  [key: string]: any;
 }
