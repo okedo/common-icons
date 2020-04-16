@@ -5,9 +5,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 To add new icon you need:
 
 - Place icon svg into `common-icons/src/assets/icons`;
-- If icon has fill color, remove it (inline svg used, so fill color can not be overrwitten by css) 
+- If icon has fill color, remove it (inline svg used, so fill color can not be overrwitten by css) ;
 - In root directory run: `npm run sprites`;
-- Add icon name(should be the same as svg filename) to `ICON_NAMES` array in `common-icons/src/lib/common-icons-names.ts`
+- Add icon name(should be the same as svg filename) to `ICON_NAMES` array in `common-icons/src/lib/common-icons-names.ts`;
+- Update package version in `common-icons/package.json`;
+- Run `npm run build_lib`;
+- Run `npm run publish`;
+
 
 To use in your app you should:
 
