@@ -8,6 +8,7 @@
     "build_lib": "cd ./projects/common-icons && ng build --prod",
     "publish_lib": "cd ./dist/common-icons && npm publish --access public",
     "publish": "npm run build_lib && npm run publish_lib",
+    "sprites": "cd ./projects/common-icons && npm run sprites",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

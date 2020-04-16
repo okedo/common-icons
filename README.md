@@ -2,26 +2,27 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
 
-## Development server
+To add new icon you need:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Place icon svg into `common-icons/src/assets/icons`;
+- If icon has fill color, remove it (inline svg used, so fill color can not be overrwitten by css) 
+- In root directory run: `npm run sprites`;
+- Add icon name(should be the same as svg filename) to `ICON_NAMES` array in `common-icons/src/lib/common-icons-names.ts`
 
-## Code scaffolding
+To use in your app you should:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Install package via npm: `npm i --save @spike_doc/common-icons`;
+- Add Material icon fonts to index.html of app:
 
-## Build
+````
+<link
+  href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+  rel="stylesheet"
+/>
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+And update polyfills.ts:
+```
+  import 'svgxuse/svgxuse.js';
+```
+````

@@ -1,0 +1,6 @@
+<svg *ngIf="inRegistry" [ngStyle]="style" class="inline-svg">
+  <use [attr.xlink:href]="iconLink"></use>
+</svg>
+<span *ngIf="!inRegistry" [ngStyle]="style" class="material-icons">
+  {{ iconName }}
+</span>
