@@ -17,18 +17,10 @@ import { CommonIcon } from './common-icons-names';
   styles: []
 })
 export class CommonIconComponent {
-  private fillStyle = "";
-
   @Input() public iconName: CommonIcon;
   @Input() public width: string;
   @Input() public height: string;
-  @Input() public set fill(fill: string){
-    this.fillStyle = fill;
-  };
-
-  public get fill():string {
-    return `${this.fillStyle} !important`
-  }
+  @Input() public fill: string;
 
   public get iconLink(): string {
     return `../assets/sprites/symbol/svg/sprite.symbol.svg#${this.iconName}`;
