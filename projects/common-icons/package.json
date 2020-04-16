@@ -7,6 +7,7 @@
     "tslib": "^1.10.0"
   },
   "scripts": {
+    "build": "npm run sprites && ng build --prod",
     "sprites": "svg-sprite --config sprite-config.json src/assets/icons/*.svg"
   },
   "dependencies": {
