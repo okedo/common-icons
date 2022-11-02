@@ -14,6 +14,6 @@
     "svgxuse": "^1.2.6"
   },
   "devDependencies": {
-    "svg-sprite": "^1.5.0"
+    "svg-sprite": "^1.5.4"
   }
 }
